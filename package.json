@@ -9,8 +9,9 @@
     "type":"module",
     "build":"node index.js"
   },
-  {
-  "engines":"16.16.0"  
+  
+  "engines":{
+    "node":"16.16.0"
   },
   "author": "shivam",
   "license": "ISC",
