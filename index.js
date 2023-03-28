@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 app.use(express.json())
 app.use('/',require('./routes/createuser'))
 app.use('/',require('./routes/displaydata'))
-app.use('/',require('./routes/orderData'))
+app.use('/',require('./routes/OrderData'))
 app.listen(port, () => {
   console.log(`http://localhost:${port}`)
 })
