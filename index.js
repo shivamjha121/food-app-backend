@@ -8,7 +8,7 @@ const bodyParser = require("body-parser")
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use((req,res,next)=>{
-   const allowedOrigins = ['https://grand-trifle-c397e8.netlify.app', 'http://localhost:3000'];
+   const allowedOrigins = ['https://grand-trifle-c397e8.netlify.app', 'http://localhost:3000','https://642da8db72c4c80aefcfaa69--graceful-fudge-57ecc2.netlify.app'];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
        res.setHeader('Access-Control-Allow-Origin', origin);
