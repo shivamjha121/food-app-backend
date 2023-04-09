@@ -63,8 +63,9 @@ body('email','incorrect email').isEmail(),
 
         }
         const authtoken=jwt.sign(data,jwtsecret)
+        const name=userdata.name
 
-        return res.json({ success: true ,authtoken:authtoken})
+        return res.json({ success: true ,authtoken:authtoken,name:name})
     } catch (error) {
         res.json({success: false})
     }
